@@ -57,6 +57,10 @@
     --chart-4: 280 65% 60%;
     --chart-5: 340 75% 55%;
   }
+  .fixed-dock {
+    @apply fixed bottom-0 left-0 w-full z-50;
+    /* Or you can customize the position as needed */
+  }
 }
 
 @layer base {
