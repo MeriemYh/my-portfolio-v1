@@ -30,6 +30,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+      {children}
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"
@@ -39,7 +40,6 @@ export default function RootLayout({
           <div className="absolute top-5 right-5 z-10">
             <ModeToggle />
           </div>
-          {children}
           <DockDemo />
         </ThemeProvider>
       </body>

@@ -144,7 +144,7 @@ export default function Home() {
                 style={{
                   background:
                     hoveredCard === project.id
-                      ? `radial-gradient(circle 150px at ${mousePosition.x}px ${mousePosition.y}px, rgba(0, 0, 0, 0.2), transparent 100%)`
+                      ? `radial-gradient(circle 150px at ${mousePosition.x}px ${mousePosition.y}px,rgba(255, 255, 255, 0.1), transparent 100%)`
                       : "",
                   opacity: hoveredCard === project.id ? 1 : 0,
                 }}
