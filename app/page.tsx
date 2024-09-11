@@ -29,8 +29,8 @@ type Experience = {
 
 const projects: Project[] = [
   { id: 1, title: "wijhati", description: "Wijhati is a web application that offers great guidance for new high school graduates", image: "images/wijhati.png" },
-  { id: 2, title: "daresni", description: "A web application for online courses and language learning.", image: "images/home1.png" },
-  { id: 3, title: "InnoSocial", description: "A web application that allows ESI SBA employees to submit and manage social programs.", image: "images/innoscial.png" },
+  { id: 2, title: "InnoSocial", description: "A web application that allows ESI SBA employees to submit and manage social programs.", image: "images/inno.jpg" },
+  { id: 3, title: "daresni", description: "A web application for online courses and language learning.", image: "images/home1.png" },
 ];
 
 const experiences: Experience[] = [
@@ -42,6 +42,8 @@ const experiences: Experience[] = [
       { date: "February 2021", description: "Remained as an active member and contributed as a social media member." },
     ],
   },
+  
+
   {
     title: "Ingeniums Club 👾",
     description: "Ingeniums is a community of motivated students focused on learning, sharing, and innovating. It fosters growth, integration, and celebrates cultural diversity in a welcoming environment.",
@@ -52,7 +54,7 @@ const experiences: Experience[] = [
     ],
   },
   {
-    title: "Gdg sba 🤖",
+    title: "Gdsc sba 🤖",
     description: "The Google Developers Student Club (GDSC SBA) is a student-led community focused on developing technical skills and innovation. It offers workshops, collaborative projects, and a supportive environment for students to learn, connect, and create impactful solutions.",
     dates: [
       { date: "July 2022", description: "Joined the club and assumed the role of leader in the Finance and Partnerships department, gaining valuable insights and experience." },
@@ -109,20 +111,16 @@ export default function Home() {
           <AvatarFallback>CN</AvatarFallback>
         </Avatar>
         <h1 className="text-3xl font-bold mb-3">Hi, I'm Meriem👋</h1>
-        <p className="text-sm">A future software engineer with a passion for web development and open source. I like sketching things and bringing them to life using technical skills.</p>
+        <p className="text-sm">A future software engineer with a passion for web development and open source.</p>
         <br />
         <br />
-        <h1 className="text-lg font-bold mb-2">Currently cooking 👨‍🍳</h1>
+        <h1 className="text-lg font-bold mb-2">Recently cooking 👨‍🍳</h1>
         <Separator className="mb-2" />
         <h1 className="text-base font-semibold">Medical project</h1>
         <p className="mb-4 font-normal text-gray-500">
           It's a web application for diabetic patients. It helps them organize their diets and medicines using the Gemini API.
         </p>
-        <h1 className="text-base font-semibold">Continue learning</h1>
-        <p className="mb-8 font-normal text-gray-500">
-          Learning more about web development and how to improve it. Also focusing on DevOps as it's my field in college!
-        </p>
-
+        
         <h2 className="text-lg font-bold mb-4">Projects 🏗️</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
           {projects.map((project) => (
