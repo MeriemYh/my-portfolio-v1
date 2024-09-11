@@ -28,42 +28,96 @@ type Experience = {
 };
 
 const projects: Project[] = [
-  { id: 1, title: "wijhati", description: "Wijhati is a web application that offers great guidance for new high school graduates", image: "images/wijhati.png" },
-  { id: 2, title: "InnoSocial", description: "A web application that allows ESI SBA employees to submit and manage social programs.", image: "images/inno.jpg" },
-  { id: 3, title: "daresni", description: "A web application for online courses and language learning.", image: "images/home1.png" },
+  {
+    id: 1,
+    title: "wijhati",
+    description:
+      "Wijhati est une application web qui offre une excellente orientation aux nouveaux diplômés du lycée.",
+    image: "images/wijhati.png",
+  },
+  {
+    id: 2,
+    title: "InnoSocial",
+    description:
+      "Une application web qui permet aux employés de l'ESI SBA de soumettre et de gérer des programmes sociaux.",
+    image: "images/inno.jpg",
+  },
+  {
+    id: 3,
+    title: "daresni",
+    description:
+      "Une application web pour des cours en ligne et l'apprentissage des langues.",
+    image: "images/home1.png",
+  },
 ];
 
 const experiences: Experience[] = [
   {
     title: "Alphabit Club 💙",
-    description: "Alphabit Club is the scientific club of ESI SBA, focused on bringing together tech enthusiasts and providing students with essential resources.",
+    description:
+      "Alphabit Club est le club scientifique de l'ESI SBA, dédié à rassembler les passionnés de technologie et à fournir aux étudiants des ressources essentielles.",
     dates: [
-      { date: "January 2020", description: "Joined the club and started contributing to the project." },
-      { date: "February 2021", description: "Remained as an active member and contributed as a social media member." },
+      {
+        date: "Janvier 2020",
+        description:
+          "J'ai rejoint le club et commencé à contribuer aux projets.",
+      },
+      {
+        date: "Février 2021",
+        description:
+          "Je suis resté membre actif et j'ai contribué en tant que membre du département des médias sociaux.",
+      },
     ],
   },
-  
 
   {
     title: "Ingeniums Club 👾",
-    description: "Ingeniums is a community of motivated students focused on learning, sharing, and innovating. It fosters growth, integration, and celebrates cultural diversity in a welcoming environment.",
+    description:
+      "Ingeniums est une communauté d’étudiants motivés axée sur l’apprentissage, le partage et l’innovation. Elle favorise la croissance, l’intégration et célèbre la diversité culturelle dans un environnement accueillant.",
     dates: [
-      { date: "January 2021", description: "Started as a Finance member and contributed to all events of the year." },
-      { date: "January 2022", description: "Stepped into the role of president for a period of time, strengthening my leadership skills and guiding the team through various initiatives." },
-      { date: "January 2023/2024", description: "Became an alumni, offering guidance and support to the club while staying connected to its growth and community." },
+      {
+        date: "Janvier 2021",
+        description:
+          "J'ai commencé comme membre du département Finance et j'ai contribué à tous les événements de l'année.",
+      },
+      {
+        date: "Janvier 2022",
+        description:
+          "J'ai assumé le rôle de président pendant un certain temps, renforçant mes compétences en leadership et guidant l'équipe à travers diverses initiatives.",
+      },
+      {
+        date: "Janvier 2023/2024",
+        description:
+          "J'ai devenu un alumni, offrant des conseils et de l'aide au club tout en restant connecté à sa croissance et à sa communauté.",
+      },
     ],
   },
   {
     title: "Gdsc sba 🤖",
-    description: "The Google Developers Student Club (GDSC SBA) is a student-led community focused on developing technical skills and innovation. It offers workshops, collaborative projects, and a supportive environment for students to learn, connect, and create impactful solutions.",
+    description:
+      "Le Google Developers Student Club (GDSC SBA) est une communauté dirigée par des étudiants, axée sur le développement des compétences techniques et l'innovation. Il propose des ateliers, des projets collaboratifs et un environnement de soutien pour aider les étudiants à apprendre, se connecter et créer des solutions impactantes.",
     dates: [
-      { date: "July 2022", description: "Joined the club and assumed the role of leader in the Finance and Partnerships department, gaining valuable insights and experience." },
+      {
+        date: "Juillet 2022",
+        description:
+          "J'ai rejoint le club et j'ai assumé le rôle de leader dans le département Finance et Partenariats, acquérant ainsi des connaissances et une expérience précieuses.",
+      },
     ],
   },
 ];
 
 const skills: string[] = [
-  "HTML", "CSS", "JavaScript", "React", "Next.js", "NestJS", "Express.js", "MongoDB", "MySQL", "Microservices", "Figma"
+  "HTML",
+  "CSS",
+  "JavaScript",
+  "React",
+  "Next.js",
+  "NestJS",
+  "Express.js",
+  "MongoDB",
+  "MySQL",
+  "Microservices",
+  "Figma",
 ];
 
 export default function Home() {
@@ -110,18 +164,23 @@ export default function Home() {
           <AvatarImage src="/images/profile.png" alt="Profile" />
           <AvatarFallback>CN</AvatarFallback>
         </Avatar>
-        <h1 className="text-3xl font-bold mb-3">Hi, I'm Meriem👋</h1>
-        <p className="text-sm">A future software engineer with a passion for web development and open source.</p>
-        <br />
-        <br />
-        <h1 className="text-lg font-bold mb-2">Recently cooking 👨‍🍳</h1>
-        <Separator className="mb-2" />
-        <h1 className="text-base font-semibold">Medical project</h1>
-        <p className="mb-4 font-normal text-gray-500">
-          It's a web application for diabetic patients. It helps them organize their diets and medicines using the Gemini API.
+        <h1 className="text-3xl font-bold mb-3">Salut, je suis Meriem👋</h1>
+        <p className="text-sm">
+          Une future ingénieure en logiciel avec une passion pour le
+          développement web et l'open source.
         </p>
-        
-        <h2 className="text-lg font-bold mb-4">Projects 🏗️</h2>
+        <br />
+        <br />
+        <h1 className="text-lg font-bold mb-2">En plein projet culinaire 👨‍🍳</h1>
+        <Separator className="mb-2" />
+        <h1 className="text-base font-semibold">Projet médical</h1>
+        <p className="mb-4 font-normal text-gray-500">
+          C'est une application web pour les patients diabétiques. Elle les aide
+          à organiser leurs régimes alimentaires et leurs médicaments en
+          utilisant l'API Gemini.
+        </p>
+
+        <h2 className="text-lg font-bold mb-4">Projets 🏗️</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
           {projects.map((project) => (
             <Card
@@ -163,9 +222,14 @@ export default function Home() {
         </div>
 
         <div className="flex flex-col items-center justify-center mt-20 mb-20">
-          <h1 className="text-5xl mb-4 font-bold">I like teamwork</h1>
+          <h1 className="text-5xl mb-4 font-bold text-center">
+            J'apprécie le travail d'équipe.
+          </h1>
           <p className="text-gray-500 text-xl font-normal ml-10 mt-3">
-            During my time at university, I contributed to organizing and participating in various club events. It was eye-opening to see the possibilities brought to life by a group of motivated and passionate individuals.
+            Pendant mon temps à l'université, j'ai contribué à l'organisation et
+            à la participation à divers événements de clubs. J'ai été
+            impressionné par les possibilités offertes par un groupe de
+            personnes motivées et passionnées.
           </p>
         </div>
 
@@ -174,7 +238,7 @@ export default function Home() {
         </div>
 
         <h2 className="text-lg font-bold mb-4">Skills 🥷</h2>
-        <Separator className="mb-4"/>
+        <Separator className="mb-4" />
         <div className="w-full flex flex-wrap justify-start gap-2 mt-2 mb-2">
           {skills.map((skill, index) => (
             <Badge key={index} className="text-sm">

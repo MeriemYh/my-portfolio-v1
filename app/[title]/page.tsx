@@ -29,20 +29,20 @@ const groups: Group[] = [
     id: "1",
     title: "wijhati",
     problematique:
-      "During my time as a high school student, many of us faced uncertainty when it came to choosing the right path for college. Due to a lack of accessible information about universities and academic programs in our country, many of my peers ended up making choices they later regretted, which had a lasting impact on their lives.",
+      "Pendant mon lycée, beaucoup d'entre nous ont rencontré de l'incertitude quant au choix du bon chemin pour l'université. En raison du manque d'informations accessibles sur les universités et les programmes académiques dans notre pays, bon nombre de mes camarades ont fait des choix qu'ils ont par la suite regrettés, ce qui a eu un impact durable sur leur vie.",
     solution:
-      "Wijhati is a web application designed to guide high school students in making informed college decisions. It provides resources such as university details, academic programs, and career advice. Initially a school project, Wijhati quickly evolved into a startup, making the platform publicly accessible. It features two interfaces: a client side for students to explore colleges and their offerings, and an admin side for school administrators to manage operations efficiently.",
+      "Wijhati est une application web conçue pour aider les lycéens à prendre des décisions éclairées concernant leurs études supérieures. Elle offre des ressources telles que des informations sur les universités, les programmes académiques et des conseils de carrière. Initialement un projet scolaire, Wijhati a rapidement évolué en une startup, rendant la plateforme accessible au public. Elle propose deux interfaces : une pour les étudiants afin d'explorer les universités et leurs offres, et une pour les administrateurs scolaires afin de gérer les opérations de manière efficace.",
     badges: ["Html", "Css", "Jquery", "Php", "MySql"],
     image: "images/head-wijhati.png",
-    type: "website",
+    type: "Site web",
     url: "https://www.wijhati.dz/",
     role: "Front-End developer",
-    year: "2nd year of college",
-    target_audiance: "High school graduates",
+    year: "Deuxième année d'universitaire",
+    target_audiance: "Diplômés du lycée",
     main_functionalities: [
-      "Filtering and searching for colleges based on specific personalized criteria",
-      "Consulting information about the college and its facilities, as well as all information the student needs to know",
-      "Creating a personalized profile for the school and filling it with all necessary information about the establishment",
+      "Filtrage et recherche de collèges en fonction de critères personnalisés spécifiques",
+      "Consultation des informations sur le collège et ses installations, ainsi que toutes les informations dont l'élève a besoin.",
+      "Création d'un profil personnalisé pour l'établissement et remplissage avec toutes les informations nécessaires sur celui-ci.",
     ],
     client_url: "images/wijhati2.png",
     admin_url: "images/adminside.png",
@@ -52,17 +52,17 @@ const groups: Group[] = [
     id: "3",
     title: "daresni",
     problematique:
-      "Students face challenges traveling to various locations for private lessons, which can be time-consuming and inconvenient. Meanwhile, teachers struggle to find stable jobs as the rise of freelancing and remote work reshapes the job market, making it harder for them to secure consistent employment.",
+      "Les étudiants rencontrent des difficultés à se déplacer vers différents endroits pour des cours particuliers, ce qui peut être chronophage et peu pratique. Pendant ce temps, les enseignants peinent à trouver des emplois stables, la montée du freelancing et du travail à distance modifiant le marché de l'emploi, rendant plus difficile pour eux de garantir un emploi régulier.",
     solution:
-      "Daresni is a web application built using microservices and CQRS architecture, with Kafka handling real-time data streaming and event-driven communication for better readability and maintainability. The platform addresses educational challenges by offering online lessons, allowing students to save travel time and helping teachers connect with students for flexible tutoring Daresni features three dashboards: Admin, for managing teacher applications, lessons, exams, and students; Student, for booking teachers and applying for lessons; and Teacher, for creating sessions, applying for tutor roles, and managing schedules.",
+      "Daresni est une application web construite avec une architecture microservices et CQRS, utilisant Kafka pour le streaming de données en temps réel et la communication événementielle. Cette plateforme répond aux défis éducatifs en offrant des cours en ligne, permettant aux étudiants d’économiser du temps de trajet et aidant les enseignants à se connecter avec les étudiants pour un tutorat flexible. Daresni comprend trois tableaux de bord : l'Admin pour gérer les candidatures des enseignants, les leçons, les examens et les inscriptions des étudiants ; l’Étudiant pour rechercher et réserver des enseignants ainsi que postuler pour des cours de langue ; et l’Enseignant pour créer des sessions, postuler à des rôles de tutorat et gérer les horaires.",
     badges: ["Nextjs", "Tailwind", "Nestjs", "Mongodb", "Springboot", "Kafka"],
     image: "./images/dashboardadmin.png",
     type: "gitHub",
     url: "https://github.com/marwa-nassane0052/darasnie-nextjs-project/tree/main",
     role: "Fullstack developer",
-    year: "4th year of college",
+    year: "quatrième année d'universitaire",
     target_audiance:
-      "High school students, elementary school students and language ",
+      "Les élèves de lycée, les élèves d'école élémentaire et les langues.",
     main_functionalities: [
       "authentication service(Nestjs,mongodb,kafka)",
       "Group microservice(Nestjs,kafka,mongodb)",
@@ -81,23 +81,24 @@ const groups: Group[] = [
     id: "2",
     title: "InnoSocial",
     problematique:
-      "The current manual system for managing social programs at ESI SBA is inefficient, leading to delays and difficulties for both employees and administrators. Without a digital solution, organizing and tracking requests becomes a challenge, underscoring the need for a more efficient online platform.",
+      "Le système manuel actuel pour la gestion des programmes sociaux à l'ESI SBA est inefficace, entraînant des retards et des difficultés pour les employés et les administrateurs. Sans solution numérique, organiser et suivre les demandes devient un défi, soulignant la nécessité d'une plateforme en ligne plus efficace.",
     solution:
-      "Managing social programs often involves inefficient manual processes for both employees and administrators. To tackle this, the QuantumLeap team from ESI SBA is developing InnoSocial, a web application that streamlines the management of social program requests. InnoSocial allows employees to easily participate in social programs, reducing administrative burdens and enhancing efficiency. The platform also features dashboards for both employees and administrators to track activities and progress, allowing them to focus more on their work and less on administrative tasks.",
+      "La gestion des programmes sociaux implique souvent des processus manuels inefficaces pour les employés et les administrateurs. Pour y remédier, l'équipe de QuantumLeap de l'ESI SBA développe InnoSocial, une application web qui simplifie la gestion des demandes de programmes sociaux. InnoSocial permet aux employés de participer facilement aux programmes sociaux, réduisant les charges administratives et améliorant l'efficacité. La plateforme propose également des tableaux de bord pour les employés et les administrateurs afin de suivre les activités et les progrès, leur permettant de se concentrer davantage sur leur travail et moins sur les tâches administratives.",
     badges: ["Nextjs", "Tailwind", "Php", "Mongodb"],
     image: "./images/head-inno.jpg",
     type: "github",
     url: "https://github.com/wiam200/projet_1CS",
     role: "Front-End developer",
-    year: "3rd year of college",
-    target_audiance: "higher school of computer science employees",
+    year: "troisième année d'universitaire",
+    target_audiance: "les employés de l'école supérieure de l'informatique de sidi bel abbès",
     main_functionalities: [
-      "offering profiles for each employee created by the administrator",
-      "managing employee applications for vacations,trips,days off...etc",
-      "managing the budget of school",
-      "announcements for the school administrators",
-      "sending notifications to employees",
-      "creating a dashboard for employees and administrators",
+      "Offrir des profils pour chaque employé créés par l'administrateur.",
+      "Gestion des demandes de congés, voyages, jours de repos, etc. pour les employés.",
+      "Gestion du budget de l'école.",
+      "Annonces pour les administrateurs de l'école.",
+      "Envoi de notifications aux employés.",
+      "Création d'un tableau de bord pour les employés et les administrateurs.",
+    
     ],
     client_url: "./images/inno1.jpg",
     admin_url: "./images/inno2.jpg",
@@ -135,7 +136,7 @@ export default function GroupsDisplay({ params }: GroupsDisplayProps) {
         <div className="flex flex-col items-center">
           <h1 className="font-bold text-5xl mb-6 mt-6 ">{group.title}</h1>
           <Card className="relative w-full max-w-[850px] mb-2 rounded-xl overflow-hidden shadow-slate-500 shadow-sm">
-      <div className="relative pb-[52.35%]"> {/* 445/850 ≈ 52.35% */}
+      <div className="relative pb-[52.35%]"> 
         <CardContent className="absolute inset-0 p-0">
           <img
             src={group.image}
@@ -152,7 +153,7 @@ export default function GroupsDisplay({ params }: GroupsDisplayProps) {
                 {badge}
               </Badge>
             ))}
-          </div><div className="flex flex-row mt-10 space-x-4">
+          </div><div className="flex flex-row mt-2 space-x-4">
       <Link
         href={group.url}
         className="flex items-center gap-2"
@@ -179,7 +180,7 @@ export default function GroupsDisplay({ params }: GroupsDisplayProps) {
       )}
     </div>
 
-          <h1 className="font-bold text-3xl mt-6 mb-4">Problem</h1>
+          <h1 className="font-bold text-3xl mt-6 mb-4">Problematique</h1>
           <p className="text-lg px-4 font-semibold  text-gray-500 mb-10">
             {group.problematique}
           </p>
@@ -191,15 +192,15 @@ export default function GroupsDisplay({ params }: GroupsDisplayProps) {
             <div className="w-1/2 pr-10 flex flex-col">
               <h1 className="font-semibold text-2xl">Role</h1>
               <p className="text-gray-500 font-semibold">{group.role}</p>
-              <h1 className="font-semibold text-2xl">Year</h1>
+              <h1 className="font-semibold text-2xl">L'année</h1>
               <p className="text-gray-500 font-semibold">{group.year}</p>
-              <h1 className="font-semibold text-2xl">Target audience</h1>
+              <h1 className="font-semibold text-2xl">Public cible</h1>
               <p className="text-gray-500 font-semibold">
                 {group.target_audiance}
               </p>
             </div>
             <div className="w-1/2 pl-10">
-              <h1 className="font-semibold text-2xl">Main features</h1>
+              <h1 className="font-semibold text-2xl">Principales fonctionnalités</h1>
               <ul className="list-disc ml-4 space-y-2 font-semibold text-gray-500">
                 {group.main_functionalities.map((functionality, index) => (
                   <li key={index} className="relative">
@@ -241,7 +242,7 @@ export default function GroupsDisplay({ params }: GroupsDisplayProps) {
             href={`/${nextProjectTitle}`}
             className="flex items-center gap-2"
           >
-            Next project
+            Prochain projet
             <RxArrowRight className="mr-2 h-4 w-4" />
           </Link>
         </Button>
