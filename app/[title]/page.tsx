@@ -5,7 +5,7 @@ import { RxArrowRight } from "react-icons/rx";
 import { Badge } from "@/components/ui/badge";
 import Link from "next/link";
 import BlurFade from "@/components/magicui/blur-fade";
-
+import BackButton from "../_components/button";
 type Group = {
   id: string;
   title: string;
@@ -46,7 +46,6 @@ const groups: Group[] = [
     ],
     client_url: "images/wijhati2.png",
     admin_url: "images/adminside.png",
-  
   },
   {
     id: "3",
@@ -71,11 +70,10 @@ const groups: Group[] = [
       "Forum and messagerie microservice(socket.io,Nodejs,Mongodb)",
       "Languages microservice(Springboot,Mongodb)",
       "Payement microservice(Springboot,mongodb).",
-      
     ],
     client_url: "./images/client-daresni.png",
     admin_url: "./images/admin-daresni.png",
-        doc_url: "docs/daresni.pdf",
+    doc_url: "docs/daresni.pdf",
   },
   {
     id: "2",
@@ -85,12 +83,13 @@ const groups: Group[] = [
     solution:
       "La gestion des programmes sociaux implique souvent des processus manuels inefficaces pour les employés et les administrateurs. Pour y remédier, l'équipe de QuantumLeap de l'ESI SBA développe InnoSocial, une application web qui simplifie la gestion des demandes de programmes sociaux. InnoSocial permet aux employés de participer facilement aux programmes sociaux, réduisant les charges administratives et améliorant l'efficacité. La plateforme propose également des tableaux de bord pour les employés et les administrateurs afin de suivre les activités et les progrès, leur permettant de se concentrer davantage sur leur travail et moins sur les tâches administratives.",
     badges: ["Nextjs", "Tailwind", "Php", "Mongodb"],
-    image: "./images/head-inno.jpg",
+    image: "images/inno.jpg",
     type: "github",
     url: "https://github.com/wiam200/projet_1CS",
     role: "Front-End developer",
     year: "troisième année d'universitaire",
-    target_audiance: "les employés de l'école supérieure de l'informatique de sidi bel abbès",
+    target_audiance:
+      "les employés de l'école supérieure de l'informatique de sidi bel abbès",
     main_functionalities: [
       "Offrir des profils pour chaque employé créés par l'administrateur.",
       "Gestion des demandes de congés, voyages, jours de repos, etc. pour les employés.",
@@ -98,11 +97,10 @@ const groups: Group[] = [
       "Annonces pour les administrateurs de l'école.",
       "Envoi de notifications aux employés.",
       "Création d'un tableau de bord pour les employés et les administrateurs.",
-    
     ],
     client_url: "./images/inno1.jpg",
     admin_url: "./images/inno2.jpg",
-    
+
     doc_url: "docs/inno.pdf",
   },
 ];
@@ -132,20 +130,21 @@ export default function GroupsDisplay({ params }: GroupsDisplayProps) {
 
   return (
     <BlurFade delay={0.25} inView>
+      <BackButton />
       <div className="flex flex-col mt-10 w-full max-w-2xl mx-auto">
         <div className="flex flex-col items-center">
-          <h1 className="font-bold text-5xl mb-6 mt-6 ">{group.title}</h1>
+          <h1 className="font-bold text-5xl mb-6 mt-6  ">{group.title}</h1>
           <Card className="relative w-full max-w-[850px] mb-2 rounded-xl overflow-hidden shadow-slate-500 shadow-sm">
-      <div className="relative pb-[52.35%]"> 
-        <CardContent className="absolute inset-0 p-0">
-          <img
-            src={group.image}
-            alt={group.title}
-            className="w-full h-full object-cover rounded-xl"
-          />
-        </CardContent>
-      </div>
-    </Card>
+            <div className="relative pb-[52.35%]">
+              <CardContent className="absolute inset-0 p-0">
+                <img
+                  src={group.image}
+                  alt={group.title}
+                  className="w-full h-full object-fit rounded-xl"
+                />
+              </CardContent>
+            </div>
+          </Card>
 
           <div className="w-full flex flex-wrap justify-start gap-2 mt-2 mb-2 ">
             {group.badges.map((badge, index) => (
@@ -153,41 +152,42 @@ export default function GroupsDisplay({ params }: GroupsDisplayProps) {
                 {badge}
               </Badge>
             ))}
-          </div><div className="flex flex-row mt-2 space-x-4">
-      <Link
-        href={group.url}
-        className="flex items-center gap-2"
-        target="_blank"
-        rel="noreferrer"
-      >
-        <Button className="gap-2 mb-6" variant="ghost">
-          {group.type}
-          <RxArrowRight className="h-4 w-4" />
-        </Button>
-      </Link>
-      {group.doc_url && (
-        <Link
-          href={group.doc_url}
-          className="flex items-center gap-2"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <Button className="gap-2 mb-6" variant="ghost">
-            Doc
-            <RxArrowRight className="h-4 w-4" />
-          </Button>
-        </Link>
-      )}
-    </div>
+          </div>
+          <div className="flex flex-row mt-2 space-x-4">
+            <Link
+              href={group.url}
+              className="flex items-center gap-2"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <Button className="gap-2 mb-6" variant="ghost">
+                {group.type}
+                <RxArrowRight className="h-4 w-4" />
+              </Button>
+            </Link>
+            {group.doc_url && (
+              <Link
+                href={group.doc_url}
+                className="flex items-center gap-2"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <Button className="gap-2 mb-6" variant="ghost">
+                  Doc
+                  <RxArrowRight className="h-4 w-4" />
+                </Button>
+              </Link>
+            )}
+          </div>
 
-          <h1 className="font-bold text-3xl mt-6 mb-4">Problematique</h1>
-          <p className="text-lg px-4 font-semibold  text-gray-500 mb-10">
+          <h1 className="font-bold text-3xl mt-6 mb-4 self-start ">
+            Problematique
+          </h1>
+          <p className="text-lg  font-semibold  text-gray-500 mb-10 self-start">
             {group.problematique}
           </p>
-          <h1 className="font-bold text-3xl mt-6 mb-4">Solution</h1>
-          <p className="font-semibold  text-gray-500 mb-10">
-            {group.solution}
-          </p>
+          <h1 className="font-bold text-3xl mt-6  mb-4 self-start">Solution</h1>
+          <p className="font-semibold  text-gray-500 mb-10 self-start text-lg">{group.solution}</p>
           <div className="flex w-full justify-between mt-10 mb-12">
             <div className="w-1/2 pr-10 flex flex-col">
               <h1 className="font-semibold text-2xl">Role</h1>
@@ -200,7 +200,9 @@ export default function GroupsDisplay({ params }: GroupsDisplayProps) {
               </p>
             </div>
             <div className="w-1/2 pl-10">
-              <h1 className="font-semibold text-2xl">Principales fonctionnalités</h1>
+              <h1 className="font-semibold text-2xl">
+                Principales fonctionnalités
+              </h1>
               <ul className="list-disc ml-4 space-y-2 font-semibold text-gray-500">
                 {group.main_functionalities.map((functionality, index) => (
                   <li key={index} className="relative">
@@ -212,30 +214,32 @@ export default function GroupsDisplay({ params }: GroupsDisplayProps) {
               </ul>
             </div>
           </div>
-          <Card className="relative flex-col w-[850px] h-fit mb-2 rounded-xl overflow-hidden shadow-slate-500 shadow-sm">
-          <CardContent className="p-0 h-fit w-full">
-            <img
-              src={group.client_url}
-              alt={group.title}
-              className="object-cover w-full h-full rounded-xl"
-            />
-          </CardContent>
-        </Card>
-     
-        <Card className="relative flex-col w-[850px] h-[445px] mb-2 rounded-xl overflow-hidden shadow-slate-500 shadow-sm mt-4">
-          <CardContent className="p-0 h-full w-full">
-            <img
-              src={group.admin_url}
-              alt={group.title}
-              className="object-cover w-full h-full rounded-xl"
-            />
-          </CardContent>
-        </Card>
-    
+          <Card className="relative w-full max-w-[850px] mb-2 rounded-xl overflow-hidden shadow-slate-500 shadow-sm">
+            <div className="relative pb-[52.35%]">
+              <CardContent className="absolute inset-0 p-0">
+                <img
+                  src={group.client_url}
+                  alt={group.title}
+                  className="w-full h-full object-fit rounded-xl"
+                />
+              </CardContent>
+            </div>
+          </Card>
+
+          <Card className="relative w-full mt-4 max-w-[850px] mb-2 rounded-xl overflow-hidden shadow-slate-500 shadow-sm">
+            <div className="relative pb-[52.35%]">
+              <CardContent className="absolute inset-0 p-0">
+                <img
+                  src={group.admin_url}
+                  alt={group.title}
+                  className="w-full h-full object-fit rounded-xl"
+                />
+              </CardContent>
+            </div>
+          </Card>
         </div>
-        
       </div>
-        
+
       <div className="flex justify-center w-full mb-20">
         <Button className="gap-2" variant="ghost">
           <Link
