@@ -111,13 +111,20 @@ const skills: string[] = [
   "CSS",
   "JavaScript",
   "React",
-  "Next.js",
+  "NextJS",
   "NestJS",
-  "Express.js",
+  "ExpressJS",
   "MongoDB",
+  "Cassandra",
+  "PowerBI",
+  "Pentaho",
   "MySQL",
   "Microservices",
   "Figma",
+  "Astah",
+  "Bootstrap",
+  "Shadcn",
+  "Ant Design"
 ];
 
 export default function Home() {
