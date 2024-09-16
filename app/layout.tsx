@@ -19,7 +19,7 @@ const geistMono = localFont({
 
 export const metadata: Metadata = {
   title: "My-portfolio",
-  description: "Meriem Yahiaoui Vercel portfolio",
+  description: "Meriem Yahiaoui portfolio",
 };
 
 export default function RootLayout({
